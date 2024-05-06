@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><br>Homixide><br>Gang</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Getting Started" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Getting Started</a> 
+    <a href="#Exploration and Mining" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Exploration and Mining</a> 
+    <a href="#Building and Construction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Building and Construction</a> 
+    <a href="#Farming and Agriculture" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Farming and Agriculture</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#Exploring the Nether and End" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Exploring the Nether and End</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>homixide</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+    
+    <div class="w3-container" style="margin-top:80px" id="Getting Started">
+      <h1 class="w3-jumbo"><b>Minecraft Guide</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Getting Started.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://store-images.s-microsoft.com/image/apps.608.13850085746326678.a9b1e0db-29d0-40f3-a86c-2155353d053c.bc981608-3fa4-4929-82ff-b162b8788784?q=90&w=480&h=270" style="width:100%" onclick="onClick(this)">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://i1.sndcdn.com/artworks-yn4F2jnIjHNCDXDO-jnnZ6g-t500x500.jpg" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
+     
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+   
+  
+
+  <!-- Exploration and Mining -->
+  <div class="w3-container" id="Exploration and Mining" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Exploration and Mining.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Exploration is a key aspect of Minecraft. Venture into caves to find valuable resources like iron, coal, and diamonds. Be cautious of hostile mobs such as zombies, skeletons, and creepers that lurk in the darkness. To stay safe, craft torches to light up your surroundings and build shelters to hide from enemies at night. Mining is also essential for obtaining rare materials and ores. Dig down to find underground caverns and use a pickaxe to mine ores. Remember to always bring enough food and torches to sustain yourself during your mining expeditions.
+    </p>
+    <img src="data:image/png;base64,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" style="width:100%" onclick="onClick(this)">
+  </div>
+  
+  
+  <!-- Building and Construction -->
+  <div class="w3-container" id="Building and Construction" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Building and Construction.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Minecraft offers endless possibilities for building and construction. Whether you're building a simple house, a sprawling castle, or a complex redstone contraption, the only limit is your imagination. Start by planning out your structure and gathering the necessary materials. Experiment with different block types, colors, and textures to add depth and detail to your builds. Utilize tools like scaffolding and ladders to reach high places and create intricate designs. Don't forget to add doors, windows, and other decorative elements to make your creations come to life.
+    </p>
+    <p><b>Gang</b>:</p>
+  </div>
+
+
+
+  <!-- Farming and Agriculture / Pricing Tables -->
+  <div class="w3-container" id="Farming and Agriculture" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Farming and Agriculture.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Farming and agriculture are important aspects of Minecraft that allow players to grow crops and raise animals for food and resources. Set up a farm by planting crops like wheat, carrots, and potatoes in tilled soil. Use bone meal to speed up the growth process and harvest your crops when they're fully grown. You can also breed animals such as cows, pigs, and chickens by feeding them their respective foods. Harvesting crops and raising animals provides a sustainable source of food and materials to support your adventures in the game.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Alergie</li>
+        <li class="w3-padding-16">1000 mravenců</li>
+        <li class="w3-padding-16">hrst mravenců</li>
+        <li class="w3-padding-16">20% Číny</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Full access to premium mushroom harvesting tools</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">SSN</li>
+        <li class="w3-padding-16">Megafon 24</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Exploring the Nether and End -->
+  <div class="w3-container" id="Exploring the Nether and End" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Exploring the Nether and End.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+    <p>For more advanced players, exploring the Nether and End dimensions offers new challenges and rewards. To access the Nether, build a Nether portal using obsidian blocks and light it with flint and steel. In the Nether, you'll encounter dangerous mobs like ghasts, piglins, and blaze, as well as valuable resources like Nether quartz and glowstone. The End dimension is home to the Ender Dragon, the final boss of Minecraft. Defeating the Ender Dragon requires careful planning and preparation, but the rewards are well worth the effort, including access to the End cities and the valuable resources found within.
+    </p>
+    <img src="data:image/jpeg;base64,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" style="width: 200px;%" onclick="onClick(this)">
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Hmu for a feat beat meat 88 :)</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
